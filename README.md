@@ -11,7 +11,7 @@
 ```javascript
 import React from 'react'
 import { render } from 'react-dom';
-import { Lines } from 'react-svg-textures`;
+import { Lines } from 'react-svg-textures';
 
 render((
   <svg width={200} height={200}>
