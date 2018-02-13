@@ -71,7 +71,7 @@ import { Paths } from 'react-svg-textures`;
 | Prop | Type|
 | ----- | ------|
 | size: number |
-| d | enum( 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses', 'hexagons') || function(size) => string |
+| d | enum( 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses', 'hexagons') OR function(size) => string |
 | strokeWidth | number |
 | shapeRendering | string |
 | stroke | string |
