@@ -36,15 +36,15 @@ render((
 import { Lines } from 'react-svg-textures`;
 ```
 
-Prop | Type
------------
-size | number
-strokeWidth | number
-orientation | string
-shapeRendering | string
-stroke | string
-background | string
-id | string
+| Prop | Type |
+| --- | ---- |
+| size | number |
+| strokeWidth | number |
+| orientation | string |
+| shapeRendering | string |
+| stroke | string |
+| background | string |
+| id | string |
 
 ### Circles
 
@@ -52,15 +52,15 @@ id | string
 import { Circles } from 'react-svg-textures`;
 ```
 
-Prop | Type
------------
-size | number
-strokeWidth | number
-stroke | string
-background | string
-id | string
-complement | bool
-radius | number
+| Prop | Type |
+| ----- | --- |
+| size | number |
+| strokeWidth | number |
+| stroke | string |
+| background | string |
+| id | string |
+| complement | bool |
+| radius | number |
 
 ### Paths
 
@@ -68,15 +68,15 @@ radius | number
 import { Paths } from 'react-svg-textures`;
 ```
 
-Prop | Type
------------
-size: PropTypes.number,
-d | enum( 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses', 'hexagons') || function(size) => string
-strokeWidth | number
-shapeRendering | string
-stroke | string
-background | string
-id | string
+| Prop | Type|
+| ----- | ------|
+| size: number |
+| d | enum( 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses', 'hexagons') || function(size) => string |
+| strokeWidth | number |
+| shapeRendering | string |
+| stroke | string |
+| background | string |
+| id | string |
 
 <!-- [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo -->
