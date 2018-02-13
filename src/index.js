@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import Circles from './Circles';
+import Lines from './Lines';
+import Paths from './Paths';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export default {
+  Circles,
+  Lines,
+  Paths,
+};
