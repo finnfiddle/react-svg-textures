@@ -1,8 +1,8 @@
 # react-svg-textures
 
-<!-- [![Travis][build-badge]][build] -->
+[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-<!-- [![Coveralls][coveralls-badge]][coveralls] -->
+[![Coveralls][coveralls-badge]][coveralls]
 
 [Textures.js](http://riccardoscalco.github.io/textures/) ported to React. Fully isomorphic.
 
@@ -86,3 +86,5 @@ import { Paths } from 'react-svg-textures`;
 
 <!-- [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo -->
+
+
