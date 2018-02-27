@@ -1,90 +1,141 @@
-# react-svg-textures
+# react-svg-textures :star:
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+> [Textures.js](http://riccardoscalco.github.io/textures/) in React made simple :zap:. **react-svg-textures** is a port of the [Textures.js](http://riccardoscalco.github.io/textures/) library as React components with multiple options via props for easy usage!
 
-[Textures.js](http://riccardoscalco.github.io/textures/) ported to React. Fully isomorphic.
+## Installation
 
-## Example
+**Using Yarn:**
+
+```text
+yarn add react-svg-textures
+```
+
+**Using NPM:**
+
+```text
+npm install react-svg-textures
+```
+
+## Usage
 
 ```javascript
-import React from 'react'
-import { render } from 'react-dom';
+import React from 'react';
 import { Lines } from 'react-svg-textures';
 
-render((
-  <svg width={200} height={200}>
-    <Lines
-      id='pattern'
-      strokeWidth={10}
-      stroke='purple'
-      size={10}
-      orientation='diagonal'
-      background='blue'
-    />
-    <circle cx={100} cy={100} r={5} fill='url(#pattern)' />
-  </svg>
-), container);
+const Texture = () =>
+    <svg width={200} height={200}>
+        <Lines
+          id='pattern'
+          strokeWidth={10}
+          stroke='purple'
+          size={10}
+          orientation='diagonal'
+          background='blue'
+        />
+        <circle cx={100} cy={100} r={5} fill='url(#pattern)' />
+    </svg>
+
+export default Texture;
 ```
 
-## Components
+## Available Props Options
 
-### Lines
+```javascript
+import PropTypes from 'prop-types';
+import { Lines, Circles, Paths } from 'react-svg-textures';
 
+Lines.propTypes = {
+
+    // size must be a number
+    size: PropTypes.number,
+
+    // strokeWidth must be a number
+    strokeWidth: PropTypes.number,
+
+    // orientation must be a string
+    orientation: PropTypes.string,
+
+    // shapeRendering must be a string
+    shapeRendering: PropTypes.string,
+
+    // stroke must be a string
+    stroke: PropTypes.string,
+
+    // background must be a string
+    background: PropTypes.string,
+
+    // id must be a string
+    id: PropTypes.string
+
+};
+
+Circles.propTypes = {
+
+    // size must be a number
+    size: PropTypes.number,
+
+    // strokeWidth must be a number
+    strokeWidth: PropTypes.number,
+
+    // stroke must be a string
+    stroke: PropTypes.string,
+
+    // background must be a string
+    background: PropTypes.string,
+
+    // id must be a string
+    id: PropTypes.string,
+
+    // complement must be a boolean
+    complement: PropTypes.bool,
+
+    // radius must be a number
+    radius: PropTypes.number
+
+};
+
+Paths.propTypes = {
+
+    // size must be a number
+    size: PropTypes.number,
+
+    // d must be 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses' or 'hexagons'
+    d: PropTypes.oneOf([
+        'squares',
+        'nylon',
+        'waves',
+        'woven',
+        'caps',
+        'crosses',
+        'hexagons'
+    ])
+
+    // strokeWidth must be a number
+    strokeWidth: PropTypes.number,
+
+    // shapeRendering must be a string
+    shapeRendering: PropTypes.string,
+
+    // stroke must be a string
+    stroke: PropTypes.string,
+
+    // background must be a string
+    background: PropTypes.string,
+
+    // id must be a string
+    id: PropTypes.string,
+
+};
 ```
-import { Lines } from 'react-svg-textures`;
-```
 
-| Prop | Type |
-| --- | ---- |
-| size | number |
-| strokeWidth | number |
-| orientation | string |
-| shapeRendering | string |
-| stroke | string |
-| background | string |
-| id | string |
+## License
 
-### Circles
+MIT License
 
-```
-import { Circles } from 'react-svg-textures`;
-```
+Copyright (c) 2018 Finn Fitzsimons
 
-| Prop | Type |
-| ----- | --- |
-| size | number |
-| strokeWidth | number |
-| stroke | string |
-| background | string |
-| id | string |
-| complement | bool |
-| radius | number |
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Paths
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-```
-import { Paths } from 'react-svg-textures`;
-```
-
-| Prop | Type|
-| ----- | ------|
-| size: number |
-| d | enum( 'squares', 'nylon', 'waves', 'woven', 'caps', 'crosses', 'hexagons') OR function(size) => string |
-| strokeWidth | number |
-| shapeRendering | string |
-| stroke | string |
-| background | string |
-| id | string |
-
-<!-- [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo -->
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-<!-- [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo -->
-
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
