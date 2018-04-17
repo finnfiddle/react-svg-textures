@@ -1,6 +1,6 @@
 {
   "name": "react-svg-textures",
-  "version": "1.0.1",
+  "version": "1.4.7",
   "description": "Textures.js ported to React. Fully isomorphic.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -25,10 +25,12 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "lodash.camelcase": "^4.3.0",
+    "lodash.isequal": "^4.5.0",
     "prop-types": "^15.6.0",
     "textures": "^1.2.0"
   },
@@ -51,5 +53,5 @@
   },
   "author": "Finn Fitzsimons <fitzsimons.finn@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/finnfiddle/react-svg-textures"  
+  "repository": "https://github.com/finnfiddle/react-svg-textures"
 }

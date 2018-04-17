@@ -1,7 +1,7 @@
 # react-svg-textures
 
 <!-- [![Travis][build-badge]][build] -->
-[![npm package][npm-badge]][npm]
+[![npm version](https://badge.fury.io/js/react-svg-textures.svg)](https://badge.fury.io/js/react-svg-textures)
 <!-- [![Coveralls][coveralls-badge]][coveralls] -->
 
 [Textures.js](http://riccardoscalco.github.io/textures/) ported to React. Fully isomorphic.
