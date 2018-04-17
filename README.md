@@ -1,6 +1,9 @@
 # react-svg-textures :star:
 
 > [Textures.js](http://riccardoscalco.github.io/textures/) in React made simple :zap:. **react-svg-textures** is a port of the [Textures.js](http://riccardoscalco.github.io/textures/) library as React components with multiple options via props for easy usage!
+<!-- [![Travis][build-badge]][build] -->
+[![npm version](https://badge.fury.io/js/react-svg-textures.svg)](https://badge.fury.io/js/react-svg-textures)
+<!-- [![Coveralls][coveralls-badge]][coveralls] -->
 
 ## Installation
 

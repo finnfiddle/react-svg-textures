@@ -25,12 +25,13 @@ export default class Selection {
     return this;
   }
 
-  toReact() {
-    const children = this.children.map(child => child.toReact());
+  toReact(components) {
+    const children = this.children.map(child => child.toReact(components));
+    const the = { component: components[this.tagName] };
     return this.tagName ? (
-      <this.tagName {...this.attrs} key={this.attrs.id || rand()}>
+      <the.component {...this.attrs} key={this.attrs.id || rand()}>
         {children}
-      </this.tagName>
+      </the.component>
     ) : children[0];
   }
 
