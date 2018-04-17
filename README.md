@@ -22,18 +22,19 @@ npm install react-svg-textures
 import React from 'react';
 import { Lines } from 'react-svg-textures';
 
-const Texture = () =>
-    <svg width={200} height={200}>
-        <Lines
-          id='pattern'
-          strokeWidth={10}
-          stroke='purple'
-          size={10}
-          orientation='diagonal'
-          background='blue'
-        />
-        <circle cx={100} cy={100} r={5} fill='url(#pattern)' />
-    </svg>
+const Texture = () => (
+  <svg width={200} height={200}>
+    <Lines
+      id='pattern'
+      strokeWidth={10}
+      stroke='purple'
+      size={10}
+      orientation='diagonal'
+      background='blue'
+    />
+    <circle cx={100} cy={100} r={5} fill='url(#pattern)' />
+  </svg>
+);
 
 export default Texture;
 ```
